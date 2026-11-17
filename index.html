@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101116">
+    <title>Apex Horizon — Supercar Driving</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #101116;
+        color: #f5f4f2;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(ellipse at 68% 32%, #603c38 0, transparent 38%),
+          linear-gradient(145deg, #101116, #1c1b22 65%, #101116);
+      }
+
+      main {
+        width: min(680px, calc(100% - 40px));
+        padding: 48px;
+        border: 1px solid #ffffff1a;
+        background: #111217d9;
+        box-shadow: 0 24px 90px #0008;
+      }
+
+      .eyebrow {
+        color: #ef7765;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      h1 {
+        margin: 18px 0 12px;
+        font-size: clamp(42px, 9vw, 76px);
+        line-height: .9;
+        letter-spacing: -3px;
+        text-transform: uppercase;
+      }
+
+      h1 span { color: #ed5b4b; }
+
+      p {
+        max-width: 460px;
+        color: #b0afb6;
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      a {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+        padding: 0 18px;
+        background: #ed5b4b;
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        text-decoration: none;
+        transition: background .16s, transform .16s;
+      }
+
+      a:hover { background: #ff705f; transform: translateY(-2px); }
+      a:focus-visible { outline: 2px solid white; outline-offset: 4px; }
+
+      .controls {
+        margin-top: 36px;
+        padding-top: 18px;
+        border-top: 1px solid #ffffff1a;
+        color: #929199;
+        font-size: 12px;
+        line-height: 1.8;
+      }
+
+      .controls strong { color: #f5f4f2; }
+
+      @media (max-width: 520px) {
+        main { padding: 32px 24px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="eyebrow">APEX HORIZON · PACIFIC COAST</div>
+      <h1>Own the<br><span>open road.</span></h1>
+      <p>
+        Tune your supercar, take on coastal runs, and build your reputation.
+        Your garage and progress are saved in this browser.
+      </p>
+      <a href="supercar-rpg/index.html" target="_blank" rel="noopener">
+        OPEN THE GAME <span aria-hidden="true">↗</span>
+      </a>
+      <div class="controls">
+        <strong>W / ↑</strong> accelerate &nbsp;·&nbsp;
+        <strong>S / ↓</strong> brake &nbsp;·&nbsp;
+        <strong>A / D</strong> steer &nbsp;·&nbsp;
+        <strong>Space</strong> handbrake<br>
+        Press <strong>Escape</strong> to pause while driving.
+      </div>
+    </main>
+  </body>
+</html>
